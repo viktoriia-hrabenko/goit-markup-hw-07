@@ -38,7 +38,7 @@ img {
 }
 
 /* ############## POWTARZALNE STYLE ############## */
-.navigation-list,
+.navigation,
 .features-list,
 .team-list,
 .about-list,
@@ -50,41 +50,41 @@ img {
   list-style: none;
 }
 
-.contact-link-mail:hover,
-.contact-link-mail:focus,
-.contact-link-phone:hover,
-.contact-link-phone:focus,
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.address-contact-link-mail:hover,
-.address-contact-link-mail:focus,
-.address-contact-link-phone:hover,
-.address-contact-link-phone:focus {
+.contact__mail:hover,
+.contact__mail:focus,
+.contact__phone:hover,
+.contact__phone:focus,
+.navigation__link:hover,
+.navigation__link:focus,
+.address__mail:hover,
+.address__mail:focus,
+.address__phone:hover,
+.address__phone:focus {
   color: var(--main-color);
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn,
-.portfolio-btn,
-.social-links-list-item,
+.portfolio__btn,
+.social-links__item,
 .clients-list-item,
-.projects-list-item {
+.projects__item {
   cursor: pointer;
 }
 
-.contact-link-mail,
-.contact-link-mail,
-.contact-link-phone,
-.contact-link-phone,
-.navigation-list-link,
-.navigation-list-link,
-.address-contact-link-mail,
-.address-contact-link-mail,
-.address-contact-link-phone,
-.address-contact-link-phone,
-.navigation-main,
-.secondary-main {
+.contact__mail,
+.contact__mail,
+.contact__phone,
+.contact__phone,
+.navigation__link,
+.navigation__link,
+.address__mail,
+.address__mail,
+.address__phone,
+.address__phone,
+.navigation__main,
+.secondary__main {
   text-decoration: none;
 }
 /* ############## POWTARZALNE STYLE ############## */
@@ -93,7 +93,7 @@ img {
 
 .header,
 .navigation,
-.navigation-list,
+.navigation,
 .container {
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@ img {
   height: 80px;
 }
 
-.navigation-main {
+.navigation__main {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: bold;
@@ -118,23 +118,23 @@ img {
   margin-right: 93px;
 }
 
-.logo-1 {
+.logo__part__one {
   color: var(--main-color);
 }
 
-.logo-2 {
+.logo__part__two {
   color: #212121;
 }
 
-.logo-2-footer {
+.logo__part__two__footer {
   color: #ffffff;
 }
 
-.navigation-list-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 46px;
 }
 
-.navigation-list-link {
+.navigation__link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -144,7 +144,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-active::after {
+.navigation__link--active::after {
   content: "";
   position: absolute;
   display: flex;
@@ -157,7 +157,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-active-port::after {
+.navigation__link--active--port::after {
   content: "";
   position: absolute;
   display: flex;
@@ -170,8 +170,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link-mail,
-.contact-link-phone {
+.contact__mail,
+.contact__phone {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -182,22 +182,19 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link-phone {
-}
-
-.contact-link-mail {
+.contact__mail {
   margin-right: 50px;
   margin-left: 351px;
 }
 
-.mail-icon,
-.phone-icon {
+.mail__icon,
+.phone__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.mail-icon:hover,
-.phone-icon:hover {
+.mail__icon:hover,
+.phone__icon:hover {
   fill: var(--main-color);
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -579,11 +576,11 @@ img {
   height: 252px;
 }
 
-.foot-cont {
+.footer__box {
   display: flex;
   margin-left: 140px;
 }
-.secondary-main {
+.secondary__main {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: bold;
@@ -595,16 +592,16 @@ img {
   margin-left: 15px;
 }
 
-.address-container {
+.address__box {
   margin-top: 60px;
 }
 
-.address-list {
+.address__list {
   margin-top: 20px;
   margin-left: 15px;
 }
 
-.address-list-item {
+.address__item {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -613,12 +610,12 @@ img {
   color: #ffffff;
 }
 
-.address-list-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-contact-link-mail,
-.address-contact-link-phone {
+.address__mail,
+.address__phone {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -627,7 +624,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.join-us {
+.join__us {
   margin-left: 70px;
 }
 
@@ -644,11 +641,7 @@ img {
   margin-left: 39px;
 }
 
-.join-us {
-  margin-left: 70px;
-}
-
-.social-list-link-footer {
+.social-links__footer {
   display: flex;
   width: 44px;
   height: 44px;
@@ -658,14 +651,14 @@ img {
   justify-content: center;
 }
 
-.inst,
-.twit,
-.fb,
-.ln {
+.social__icon--inst,
+.social__icon--twit,
+.social__icon--fb,
+.social__icon--ln {
   fill: #ffffff;
 }
 
-.right-footer {
+.right__footer {
   margin-left: 50px;
   margin-top: 40px;
 }
@@ -677,7 +670,7 @@ img {
   gap: 12px;
 }
 
-.footer-heading{
+.footer__heading{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -688,7 +681,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.newsletter-text {
+.newsletter__text {
   border: 1px solid #757575;
   color: #757575;
   background-color: transparent;
@@ -699,13 +692,13 @@ color: #FFFFFF;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-text:focus {
+.newsletter__text:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
   outline: none;
 }
 
-.newsletter-btn-a {
+.newsletter__btn__a {
   background-color: #2196f3;
   border: 0;
   border-radius: 4px;
@@ -719,7 +712,7 @@ color: #FFFFFF;
   cursor: pointer;
 }
 
-.newsletter-btn {
+.newsletter__btn {
   color: #ffffff;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -733,7 +726,7 @@ color: #FFFFFF;
 /*##################### END FOOTER #################*/
 
 /*##################### PORTFOLIO #################*/
-.buttons-list {
+.buttons__list {
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
@@ -745,11 +738,11 @@ color: #FFFFFF;
   margin-bottom: 50px;
 }
 
-.buttons-list-item:not(:last-child) {
+.buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-btn {
+.portfolio__btn {
   background: #f5f4fa;
   border: #f5f4fa;
   border-radius: 4px;
@@ -761,7 +754,7 @@ color: #FFFFFF;
   letter-spacing: 0.03em;
 }
 
-.portfolio-btn:hover {
+.portfolio__btn:hover {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -774,27 +767,27 @@ color: #FFFFFF;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.all-btn {
+.portfolio__btn--all {
   width: 121px;
   height: 38px;
 }
 
-.pages-btn {
+.portfolio__btn--pages {
   width: 93px;
   height: 38px;
 }
 
-.apps-btn {
+.portfolio__btn--apps {
   width: 114px;
   height: 38px;
 }
 
-.design-btn {
+.portfolio__btn--design {
   width: 91px;
   height: 38px;
 }
 
-.mark-btn {
+.portfolio__btn--mark {
   width: 121px;
   height: 38px;
 }
@@ -805,14 +798,14 @@ color: #FFFFFF;
   margin-bottom: 94px;
 }
 
-.projects-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 30px;
 }
 
-.projects-list-item {
+.projects__item {
   width: 370px;
   height: 404px;
   background: #ffffff;
@@ -826,12 +819,12 @@ color: #FFFFFF;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list-item:nth-child(-n + 6) {
+.projects__item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: translateY(0);
@@ -875,11 +868,11 @@ color: #FFFFFF;
   padding-bottom: 49px;
 }
 
-.card {
+.projects__card {
   border: 1px solid #eeeeee;
 }
 
-.project-name {
+.projects__name {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -889,7 +882,7 @@ color: #FFFFFF;
   margin-left: 24px;
 }
 
-.project-type {
+.projects__type {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
