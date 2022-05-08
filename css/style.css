@@ -203,7 +203,7 @@ img {
 /* ############## Koniec sekcji HEADER ############## */
 
 /* ############## Sekcja HERO   ############## */
-.main-header-container {
+.section--main-headline {
   margin: 0 auto;
   height: 600px;
   padding-top: 200px;
@@ -216,13 +216,13 @@ img {
   background-size: cover;
 }
 
-.m-h-c {
+.container--main-headline {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main-header {
+.main__headline {
   width: 696px;
   height: 120px;
   font-style: normal;
@@ -254,7 +254,7 @@ img {
   height: 50px;
 }
 
-.features-list {
+.features__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -263,52 +263,52 @@ img {
   height: 101px;
 }
 
-.features-list-item {
+.features__item {
   width: 270px;
   height: 101px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.features-list-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-icon-par {
+.features__icon--box {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
 
-.antenna {
+.features__icon--antenna {
   margin-top: 25px;
   margin-right: 102.34px;
   margin-bottom: 25px;
   margin-left: 102.34px;
 }
 
-.clock {
+.features__icon--clock {
   margin-top: 25px;
   margin-right: 101.5px;
   margin-bottom: 25px;
   margin-left: 101.5px;
 }
 
-.diagram {
+.features__icon--diagram {
   margin-top: 33.2px;
   margin-right: 100px;
   margin-bottom: 33.2px;
   margin-left: 100px;
 }
 
-.astronaut {
+.features__icon--astronaut {
   margin-top: 25px;
   margin-right: 100px;
   margin-bottom: 25px;
   margin-left: 100px;
 }
 
-.features-name {
+.features__name {
   width: 270px;
   height: 16px;
   font-style: normal;
@@ -319,7 +319,7 @@ img {
   text-transform: uppercase;
 }
 
-.features-description {
+.features__description {
   width: 270px;
   height: 75px;
   font-style: normal;
@@ -344,7 +344,7 @@ img {
   padding-bottom: 94px;
   margin-bottom: 188px;
 }
-.secondary-header {
+.secondary__headline {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -353,22 +353,22 @@ img {
   letter-spacing: 0.03em;
 }
 
-.secondary-header-container {
+.about__headline__box {
   margin-top: 94px;
   padding-top: 94px;
   margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.about-list-item {
+.about__item {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.about-list-item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -394,7 +394,7 @@ img {
 
 /* ############## Nasz zespól ############## */
 
-.secondary-header-team {
+.team__headline__box {
   margin-bottom: 50px;
 }
 
@@ -407,7 +407,7 @@ img {
   margin-top: 94px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   height: 368px;
@@ -415,7 +415,7 @@ img {
   margin-right: 15px;
 }
 
-.team-list-item {
+.team__item {
   width: 270px;
   height: 428px;
   flex-basis: calc(100% / 4 - 30px);
@@ -425,11 +425,11 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-member {
+.team__member {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -439,7 +439,7 @@ img {
   text-align: center;
 }
 
-.type-of-work-in-team {
+.team__work {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -450,7 +450,7 @@ img {
   text-align: center;
 }
 
-.social-links-list {
+.social-links__list {
   display: flex;
   flex-wrap: wrap;
   width: 206px;
@@ -460,7 +460,7 @@ img {
   margin-left: 32px;
 }
 
-.social-list-link {
+.social__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -471,10 +471,10 @@ img {
   fill: #afb1b8;
 }
 
-.social-list-link:hover,
-.social-list-link:focus,
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.social__link:hover,
+.social__link:focus,
+.social-links__footer:hover,
+.social-links__footer:focus {
   fill: #ffffff;
   background-color: var(--main-color);
   transition: fill 250ms;
@@ -483,11 +483,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links-list-item {
+.social-links__item {
   flex-basis: calc(100% / 4 - 10px);
 }
 
-.social-links-list-item:not(:last-child) {
+.social-links__item:not(:last-child) {
   margin-right: 10px;
 }
 /* ############## Koniec sekcji Nasz zespól ############## */
@@ -500,12 +500,12 @@ img {
   margin-bottom: 94px;
 }
 
-.secondary-header-clients {
+.clients__headline__box {
   margin-bottom: 50px;
   margin-left: 15px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   width: px;
@@ -515,7 +515,7 @@ img {
   padding-left: px;
 }
 
-.clients-list-item {
+.clients__item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -524,42 +524,42 @@ img {
   fill: #afb1b8;
 }
 
-.clients-list-item {
+.clients__item {
   flex-basis: calc(100% / 6 - 30px);
 }
 
-.clients-list-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-list-link {
+.clients__link {
   fill: #afb1b8;
 }
 
-.logo1,
-.logo2 {
+.logo__icon--one,
+.logo__icon--two {
   margin-top: 17.71px;
   margin-right: 32px;
   margin-bottom: 14.25;
   margin-left: 32px;
 }
 
-.logo3,
-.logo4,
-.logo5,
-.logo6 {
+.logo__icon--three,
+.logo__icon--four,
+.logo__icon--five,
+.logo__icon--six {
   margin-top: 16px;
   margin-right: 32px;
   margin-bottom: 16px;
   margin-left: 32px;
 }
 
-.clients-list-item:hover,
-.clients-list-item:focus,
-.clients-list-link:hover,
-.clients-list-link:focus,
-.logo-icon:hover,
-.logo-icon:focus {
+.clients__item:hover,
+.clients__item:focus,
+.clients__link:hover,
+.clients__link:focus,
+.logo__icon:hover,
+.logo__icon:focus {
   fill: var(--main-color);
   border-color: var(--main-color);
   transition: fill 250ms;
@@ -922,7 +922,7 @@ color: #FFFFFF;
   }
 }
 
-.close-btn {
+.close__btn {
   position: absolute;
   display: flex;
   width: 30px;
@@ -937,19 +937,19 @@ color: #FFFFFF;
   cursor: pointer;
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form-box {
+.form__box {
   display: flex;
   flex-direction: column;
   margin: 40px;
 }
 
-.form-box h3 {
+.form__box h3 {
   text-align: center;
   padding-bottom: 30px;
   width: 448px;
@@ -963,7 +963,7 @@ color: #FFFFFF;
   color: #212121;
 }
 
- .label-form {
+ .label__form {
   width: 41px;
   height: 14px;
   font-family: Roboto;
@@ -977,7 +977,7 @@ color: #FFFFFF;
   margin-top: 4px;
 }
 
-.label-form textarea {
+.label__form textarea {
   width: 448px;
   height: 120px;
   font-family: Roboto;
@@ -992,7 +992,7 @@ color: #FFFFFF;
   margin-top: 4px;
 }
 
-.label-box {
+.label__box {
   display: flex;
   align-items: center;
   margin-top: 4px;
@@ -1000,7 +1000,7 @@ color: #FFFFFF;
   width: 448px;
 }
 
-.input-form {
+.input__form {
   height: 40px;
   width: 448px;
   margin-top: 4px; 
@@ -1009,29 +1009,29 @@ color: #FFFFFF;
   border-radius: 4px;
 }
 
-.label-box svg {
+.label__box svg {
   position: absolute;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-box input,
-.label-form textarea {
+.label__box input,
+.label__form textarea {
   border-radius: 4px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-box input:focus,
-.label-form textarea:focus {
+.label__box input:focus,
+.label__form textarea:focus {
   border: 1px solid #2196f3;
 }
 
-.label-box input:focus + svg {
+.label__box input:focus + svg {
   fill: #2196f3;
 }
 
-.policy-box {
+.policy__box {
   display: flex;
   margin-top: 90px;
   align-items: center;
@@ -1043,7 +1043,7 @@ color: #FFFFFF;
   align-items: center;
 }
 
-.policy-text,
+.policy__text,
 .docs {
   font-family: Roboto;
   font-style: normal;
@@ -1090,7 +1090,7 @@ color: #FFFFFF;
   border: none;
 }
 
-.checkmark-svg {
+.checkmark__svg {
   display: none;
   opacity: 0;
 }
@@ -1100,31 +1100,31 @@ color: #FFFFFF;
   opacity: 1;
 }
 
-.policy-box .policy-text {
+.policy__box .policy__text {
   margin: 0 5px;
 }
 
 
-.label-box input {
+.label__box input {
   padding-left: 42px;
 }
 
-.name-svg {
+.name__svg {
   margin-top: 6px;
   margin-left: 15px;
 }
 
-.tel-svg {
+.tel__svg {
   margin-top: 5.26px;
   margin-left: 14.27px;
 }
 
-.mail-svg {
+.mail__svg {
   margin-top: 6px;
   margin-left: 13.5px;
 }
 
-.modal-btn {
+.modal__btn {
   position: absolute;
   width: 200px;
   height: 50px;
