@@ -1,0 +1,49 @@
+.navigation,
+.features__list,
+.team__list,
+.about__list,
+.buttons__list,
+.projects__list,
+.address__list,
+.social-links__list,
+.clients__list {
+    list-style: none;
+}
+
+.contact__mail:hover,
+.contact__mail:focus,
+.contact__phone:hover,
+.contact__phone:focus,
+.navigation__link:hover,
+.navigation__link:focus,
+.address__mail:hover,
+.address__mail:focus,
+.address__phone:hover,
+.address__phone:focus {
+    color: var(--main-color);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn,
+.portfolio__btn,
+.social-links__item,
+.clients-list-item,
+.projects__item {
+    cursor: pointer;
+}
+
+.contact__mail,
+.contact__mail,
+.contact__phone,
+.contact__phone,
+.navigation__link,
+.navigation__link,
+.address__mail,
+.address__mail,
+.address__phone,
+.address__phone,
+.navigation__main,
+.secondary__main {
+    text-decoration: none;
+}

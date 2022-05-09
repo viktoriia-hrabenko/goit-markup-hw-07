@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --main-color: #2196f3;
+    --secondary-color: #757575;
+}
+
+body {
+    font-family: var(--main-font);
+    color: #212121;
+}
+
+h1,
+h2,
+h3,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}

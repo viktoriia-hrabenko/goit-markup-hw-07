@@ -1,0 +1,65 @@
+.buttons__list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 572px;
+    height: 54px;
+    margin-top: 94px;
+    margin-left: 310px;
+    margin-right: 310px;
+    margin-bottom: 50px;
+}
+
+.buttons__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio__btn {
+    background: #f5f4fa;
+    border: #f5f4fa;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio__btn:hover {
+    background: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__btn--all {
+    width: 121px;
+    height: 38px;
+}
+
+.portfolio__btn--pages {
+    width: 93px;
+    height: 38px;
+}
+
+.portfolio__btn--apps {
+    width: 114px;
+    height: 38px;
+}
+
+.portfolio__btn--design {
+    width: 91px;
+    height: 38px;
+}
+
+.portfolio__btn--mark {
+    width: 121px;
+    height: 38px;
+}

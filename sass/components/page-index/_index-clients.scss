@@ -1,0 +1,74 @@
+.clients {
+    display: flex;
+    flex-direction: column;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.clients__headline__box {
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: px;
+    height: px;
+    align-items: center;
+    justify-content: center;
+    padding-left: px;
+}
+
+.clients__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: #afb1b8;
+}
+
+.clients__item {
+    flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__link {
+    fill: #afb1b8;
+}
+
+.logo__icon--one,
+.logo__icon--two {
+    margin-top: 17.71px;
+    margin-right: 32px;
+    margin-bottom: 14.25;
+    margin-left: 32px;
+}
+
+.logo__icon--three,
+.logo__icon--four,
+.logo__icon--five,
+.logo__icon--six {
+    margin-top: 16px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+.clients__item:hover,
+.clients__item:focus,
+.clients__link:hover,
+.clients__link:focus,
+.logo__icon:hover,
+.logo__icon:focus {
+    fill: var(--main-color);
+    border-color: var(--main-color);
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} 
