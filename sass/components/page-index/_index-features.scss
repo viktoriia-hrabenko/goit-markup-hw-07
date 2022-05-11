@@ -11,10 +11,10 @@
     width: 270px;
     height: 101px;
     flex-basis: calc(100% / 4 - 30px);
-}
 
-.features__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .features__icon--box {

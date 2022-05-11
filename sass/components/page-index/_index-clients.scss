@@ -27,18 +27,35 @@
     box-sizing: border-box;
     border-radius: 4px;
     fill: #afb1b8;
-}
-
-.clients__item {
     flex-basis: calc(100% / 6 - 30px);
-}
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:hover,
+    &:focus {
+        fill: var(--main-color);
+        border-color: var(--main-color);
+        transition: fill 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .clients__link {
     fill: #afb1b8;
+
+    &:hover,
+    &:focus {
+        fill: var(--main-color);
+        border-color: var(--main-color);
+        transition: fill 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .logo__icon--one,
@@ -59,10 +76,6 @@
     margin-left: 32px;
 }
 
-.clients__item:hover,
-.clients__item:focus,
-.clients__link:hover,
-.clients__link:focus,
 .logo__icon:hover,
 .logo__icon:focus {
     fill: var(--main-color);
