@@ -1,3 +1,8 @@
+body {
+    font-family: map-get($font-family, 'roboto');
+    color: map-get($colors, 'primary');
+}
+
 h1,
 h2,
 h3,
@@ -40,7 +45,7 @@ img {
 .address__mail:focus,
 .address__phone:hover,
 .address__phone:focus {
-    color: var(--main-color);
+    color: map-get($colors, 'accent');
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

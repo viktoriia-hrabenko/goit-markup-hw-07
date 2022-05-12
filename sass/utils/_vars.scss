@@ -4,21 +4,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    --main-font: "Roboto", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
-    --main-color: #2196f3;
-    --secondary-color: #757575;
-}
-
-body {
-    font-family: var(--main-font);
-    color: #212121;
-}
-
 $colors: (
     'primary': #212121,
-    'secondary': #757575,
+    'secondary': #757575, 
     'accent': #2196f3,
     'dark': #2f303a,
     'light': #f5f4fa,
@@ -47,7 +35,7 @@ $font-size: (
 );
 
 $font-family: (
-    'roboto': Roboto,
+    'roboto': Roboto, 
     'raleway': Raleway,
 );
 
@@ -73,7 +61,7 @@ $line-height: (
     '60': 3.75rem,
 );
 
-$gapn: (
+$gapn: ( 
     '4': 4px,
     '6': 6px,
     '7': 7px,
@@ -99,4 +87,5 @@ $gapn: (
 
 $border-r: (
     '4': 4px,
+    '50': 50px,
 );

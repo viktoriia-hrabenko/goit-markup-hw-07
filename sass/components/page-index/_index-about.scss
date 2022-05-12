@@ -3,7 +3,6 @@
 }
 
 .about {
-    /*width: 970px;*/
     height: 386px;
     margin-left: 15px;
     padding-bottom: 94px;
@@ -11,6 +10,7 @@
 }
 
 .secondary__headline {
+    font-family: map-get($font-family, 'roboto');
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -47,12 +47,12 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(47, 48, 58, 0.8);
-    font-family: Roboto;
+    font-family: map-get($font-family, 'roboto');
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: map-get($colors, 'white');
 } 

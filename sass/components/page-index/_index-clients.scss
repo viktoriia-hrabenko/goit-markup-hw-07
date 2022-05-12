@@ -13,20 +13,17 @@
 .clients__list {
     display: flex;
     flex-wrap: wrap;
-    width: px;
-    height: px;
     align-items: center;
     justify-content: center;
-    padding-left: px;
 }
 
 .clients__item {
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid map-get($colors, 'light-gray');
     box-sizing: border-box;
     border-radius: 4px;
-    fill: #afb1b8;
+    fill: map-get($colors, 'light-gray');
     flex-basis: calc(100% / 6 - 30px);
 
     &:not(:last-child) {
@@ -35,8 +32,8 @@
 
     &:hover,
     &:focus {
-        fill: var(--main-color);
-        border-color: var(--main-color);
+        fill: map-get($colors, 'accent');
+        border-color: map-get($colors, 'accent');
         transition: fill 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition: border-color 250ms;
@@ -45,12 +42,12 @@
 }
 
 .clients__link {
-    fill: #afb1b8;
+    fill: map-get($colors, 'light-gray');
 
     &:hover,
     &:focus {
-        fill: var(--main-color);
-        border-color: var(--main-color);
+        fill: map-get($colors, 'accent');
+        border-color: map-get($colors, 'accent');
         transition: fill 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition: border-color 250ms;
@@ -78,8 +75,8 @@
 
 .logo__icon:hover,
 .logo__icon:focus {
-    fill: var(--main-color);
-    border-color: var(--main-color);
+    fill: map-get($colors, 'accent');
+    border-color: map-get($colors, 'accent');
     transition: fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms;

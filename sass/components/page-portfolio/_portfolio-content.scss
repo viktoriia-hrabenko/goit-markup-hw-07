@@ -14,7 +14,7 @@
 .projects__item {
     width: 370px;
     height: 404px;
-    background: #ffffff;
+    background: map-get($colors, 'white');
     box-sizing: border-box;
     flex-basis: calc(100% / 3 - 30px);
     margin-left: -30px;
@@ -62,12 +62,12 @@
     transform: translateY(100%);
     transition: transform 250ms ease;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-family: Roboto;
+    font-family: map-get($font-family, 'roboto');
     text-align: left;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: map-get($colors, 'white');
     padding-top: 49px;
     padding-left: 24px;
     padding-right: 45px;
@@ -94,7 +94,7 @@
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: map-get($colors, 'secondary');
     margin-top: 4px;
     margin-left: 24px;
 } 

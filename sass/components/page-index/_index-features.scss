@@ -20,7 +20,7 @@
 .features__icon--box {
     width: 270px;
     height: 120px;
-    background: #f5f4fa;
+    background: map-get($colors, 'light');
     border-radius: 4px;
 }
 
@@ -71,5 +71,5 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: map-get($colors, 'secondary');
 } 
